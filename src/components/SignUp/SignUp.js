@@ -75,10 +75,10 @@ const SignUp = () => {
                     }}
                     placeholder="Enter Password"
                 />
-                <button onClick={handleSignUp}>Login</button>
+                <button onClick={handleSignUp}>SignUp</button>
                 <p>
                     Already Have an account ?{" "}
-                    <span onClick={handleLogin}> SignUp </span>
+                    <span onClick={handleLogin}> Login </span>
                 </p>
             </form>
         </div>
