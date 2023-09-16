@@ -10,10 +10,13 @@ const Login = () => {
     const navigate = useNavigate();
 
     const baseUrl = "https://notesapp-backend-3r3l.onrender.com";
+    const token = localStorage.getItem("token");
 
     const handleLogin = (e) => {
         e.preventDefault();
         const user = { email, password };
+
+        localStorage.removeItem('token');
 
         axios({
             method: "POST",
