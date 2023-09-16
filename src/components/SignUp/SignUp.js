@@ -78,7 +78,7 @@ const SignUp = () => {
                 <button onClick={handleSignUp}>Login</button>
                 <p>
                     Already Have an account ?{" "}
-                    <span onClick={handleLogin}> Log In </span>
+                    <span onClick={handleLogin}> SignUp </span>
                 </p>
             </form>
         </div>
