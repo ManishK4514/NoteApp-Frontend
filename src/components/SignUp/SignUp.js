@@ -10,7 +10,7 @@ const SignUp = () => {
 
     const navigate = useNavigate();
 
-    const baseUrl = "http://localhost:5000";
+    const baseUrl = "https://notesapp-backend-3r3l.onrender.com";
 
     const handleSignUp = (e) => {
         e.preventDefault();
