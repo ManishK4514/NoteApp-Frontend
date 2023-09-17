@@ -4,8 +4,6 @@ const baseUrl = "https://notesapp-backend-3r3l.onrender.com";
 
 const getAllNote = (setNote) => {
     const token = localStorage.getItem("token");
-
-    console.log("Getting All notes... " + token);
     axios
      .get(`${baseUrl}/note`, {
         headers: { Authorization: token },
@@ -18,8 +16,7 @@ const getAllNote = (setNote) => {
 
 const addNote = (title, body, setTitle, setBody, setNote) => {
     const token = localStorage.getItem("token");
-
-    console.log("Adding note... " + token);
+    
     axios({
         method: "POST",
         url: `${baseUrl}/note/save`,
@@ -42,8 +39,7 @@ const addNote = (title, body, setTitle, setBody, setNote) => {
 
 const updateNote = (noteId, title, body, setNote, setTitle, setBody, setIsUpdating) => {
     const token = localStorage.getItem("token");
-
-    console.log("Updating note...");
+    
     axios({
         method: "PATCH",
         url: `${baseUrl}/note/update`,
@@ -69,7 +65,6 @@ const updateNote = (noteId, title, body, setNote, setTitle, setBody, setIsUpdati
 const deleteNote = (_id, setNote) => {
     const token = localStorage.getItem("token");
     
-    console.log("Deleting note...");
     axios({
         method: "DELETE",
         url: `${baseUrl}/note/delete`,
