@@ -9,7 +9,7 @@ const Login = () => {
 
     const navigate = useNavigate();
 
-    const baseUrl = "https://notesapp-backend-3r3l.onrender.com";
+    const baseUrl = "https://note-website-backend.onrender.com";
 
     const handleLogin = (e) => {
         e.preventDefault();
