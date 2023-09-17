@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = "https://notesapp-backend-3r3l.onrender.com";
+const baseUrl = "https://note-website-backend.onrender.com";
 const token = localStorage.getItem("token");
 
 const getAllNote = (setNote) => {
