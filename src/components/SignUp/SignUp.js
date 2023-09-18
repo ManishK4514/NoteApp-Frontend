@@ -25,7 +25,6 @@ const SignUp = () => {
             data: user,
         })
             .then((res) => {
-                localStorage.removeItem('token');
                 console.log("New User Created...");
                 window.localStorage.setItem("token",res.data.token);
                 navigate("/dashboard")
